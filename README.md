@@ -1,5 +1,7 @@
-# OWS
-The online-with-security project is a small cyber security manuscript for the prevention of computer attacks.
+<img src="https://raw.githubusercontent.com/sammwyy/ows/master/assets/ows.png" width="156px" align="left"> <h1>OWS Project</h1>
+<h3>The online-with-security project is a small cyber security manuscript for the prevention of computer attacks.</h3>  
+
+Donate me at [PayPal](https://paypal.me/sammwy)
 
 ## Introduction
 Most of the cases a "Hack" is executed successfully it's because bad practices had been done when developing the public interface of your application thus letting anyone "Exploit" that.
