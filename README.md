@@ -92,12 +92,6 @@ This guide will not ensure that your service is 100% inpenetrable but it will gr
 **Type of theat:** Data Injection  
 **Explanation:** Integer Underflow we can call an exploit which an application or system accepts an integer value below the minimum allowed creating a contrary operation. For example if we add 10 and 10 it would be 20, if we add 4 and 10 it will be 14., no matter what we add to 10, it will always be higher than the original but if we add for example -4 (a negative number) this operation would be done : -4 + 10 which would give a value of 6.
 
-### Intents Usage
-**Danger level:** Medium  
-
-### Location Information
-**Danger level:** Medium  
-
 ### Mail Open-Relay
 **Danger level:** Low  
 **Environment:** System & Mail  
@@ -112,6 +106,9 @@ This guide will not ensure that your service is 100% inpenetrable but it will gr
 
 ### Regex Denial of Service (ReDoS)
 **Danger level:** Medium  
+**Environment:** System  
+**Type of threat:** DoS (Denial of Service)   
+**Explanation:** This type of denial of service is done from inside the server when trying to evaluate an expression that would take a lot of time and resources to resolve.
 
 ### Sensitive Case Database
 **Danger level:** Low  
@@ -121,12 +118,9 @@ This guide will not ensure that your service is 100% inpenetrable but it will gr
 
 ### Session Fixation
 **Danger level:** Medium  
-
-### Session Poisoning
-**Danger level:** Medium  
-
-### Sleep Denial Of Service
-**Danger level:** Medium  
+**Environment:** HTTP  
+**Type of theat:** Hijack  
+**Exaplanation:** This exploit is based on modifying the unique identifier of a user so that it is logged in and the session token is saved with a wrong id, in this way an attacker can set the id of a user for example with the url and steal their credentials. Example: `http: //www.web-atacada.com/? PHPSESSID = 123456`
 
 ### System Properties Disclosure
 **Danger level:** Low  
@@ -136,12 +130,15 @@ This guide will not ensure that your service is 100% inpenetrable but it will gr
 
 ### System Properties Change
 **Danger level:** Medium  
-
-### Trust Boundary Violation
-**Danger level:** Medium  
+**Environment:** System  
+**Type of threat:** ACE (Arbitrary code execution)  
+**Explanatino:** The exploits that allow manipulating the operating system parameters are called System Properties Change.
 
 ### Uncontrolled Memory Allocation
 **Danger level:** Medium  
+**Environment:** System  
+**Type of thread:** Memory  
+**Explanation:** The exploit is based on saving data in memory whose size is out of the allowed, in this way more data will be stored than controlled.
 
 ### Unrestricted File Upload
 **Danger level:** Low  
@@ -151,6 +148,9 @@ This guide will not ensure that your service is 100% inpenetrable but it will gr
 
 ### Unvalidated/Open Redirect
 **Danger level:** Medium  
+**Environment:** HTTP  
+**Type of threat:** Phishing & XSS  
+**Explanation:** This exploit is present in the redirection endpoints of websites, for example an attacker could manipulate the destination url field to place a phishing, something like this: `https://example.com/redirect.php?redirecturl=http://phishing.com/`.
 
 ### Weak Encryption Strength
 **Danger level:** Low  
