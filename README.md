@@ -21,7 +21,7 @@ This guide will not ensure that your service is 100% inpenetrable but it will gr
 **Explanation:** We know by ACE (Arbitrary Execution Code) when a system allows us to inject instructions that will be executed in the program in an arbitrary/external way, taking advantage of bugs in it to overwrite its default routine.
 
 ### Cookie Injection
-**Danger level:** Low  
+**Danger level:** <span style="color: green"> Low </span>  
 **Environment:** HTTP  
 **Type of threat:** ACE (Arbitrary code execution)  
 **Explanation:** We call cookie injection the action of manipulating the data that is stored in the browser when visiting a website. If the web is badly programmed and it does not verify the input of the cookie before reading it, there could be a case of SQL injection or arbitrary code execution.
