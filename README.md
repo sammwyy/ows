@@ -42,7 +42,7 @@ This guide will not ensure that your service is 100% inpenetrable but it will gr
 **Danger level:** Low  
 **Environment:** JSP, PHP, ASP and others Script based websites  
 **Type of threat:** ACE (Arbitrary code execution)  
-**Explanation:** When creating a system to upload files if we are not careful we can make the mistake of not filtering or validating the files uploaded to the server and for example uploading a software script that when entering through its url executes arbitrary code + odigo on the server (an example of this would be .php files that are script-run server-side when loaded by url)  
+**Explanation:** When creating a system to upload files if we are not careful we can make the mistake of not filtering or validating the files uploaded to the server and for example uploading a software script that when entering through its url executes arbitrary code on the server (an example of this would be .php files that are script-run server-side when loaded by url)  
 
 ### Dangerous HTML Embedded
 **Danger level:** Low  
