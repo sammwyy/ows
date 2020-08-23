@@ -2,7 +2,7 @@
 The online-with-security project is a small cyber security manuscript for the prevention of computer attacks.
 
 ## Introduction
-Computer hackers in most cases are due to bad practices when programming a system that will be available to any user via the internet.  
+Most of the cases a "Hack" is executed successfully it's because bad practices had been done when developing the public interface of your application thus letting anyone "Exploit" that.
   
 In this guide we will see a summary of the most common problems in terms of web security and how to solve them.  
   
@@ -76,7 +76,7 @@ This guide will not ensure that your service is 100% inpenetrable but it will gr
 
 ### Heap Inspection
 **Danger level:** Low  
-**Environment:** System & Java  
+**Environment:** Memory & Java  
 **Type of threat:** Dump  
 **Explanation:** It is common for strings to contain confidential text that is not encrypted, but an attacker can do a memory dump if he has access to the vulnerable system and the in-memory string could be revealed. The memory could also be dumped as a result of an exploit that exhausts the system resources before the GC (Garbage Collector) removes them, because the strings are an immutable object, they will not disappear from memory until the GC removes them.
 
